@@ -11,8 +11,8 @@ package CalculatorPCK;
 public class ExtractNums {
     private String input;
     private String numStr = "";
-    private int num1;
-    private int num2;
+    private double num1;
+    private double num2;
     private char symbol;
 
     public ExtractNums(String input) {
@@ -26,10 +26,10 @@ public class ExtractNums {
             char a = input.charAt(i);
             if(a != '+' && a != '/' && a != '*' && a != '-'){
                 numStr = numStr + "" + Character.toString(a);
-                num2 = Integer.parseInt(numStr);
+                num2 = Double.parseDouble(numStr);
             }else{
                 symbol = a;
-                num1 = Integer.parseInt(numStr);
+                num1 = Double.parseDouble(numStr);
                 numStr = "";
             }
         }
@@ -51,19 +51,19 @@ public class ExtractNums {
         this.numStr = numStr;
     }
 
-    public int getNum1() {
+    public double getNum1() {
         return num1;
     }
 
-    public void setNum1(int num1) {
+    public void setNum1(double num1) {
         this.num1 = num1;
     }
 
-    public int getNum2() {
+    public double getNum2() {
         return num2;
     }
 
-    public void setNum2(int num2) {
+    public void setNum2(double num2) {
         this.num2 = num2;
     }
 
