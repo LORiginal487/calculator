@@ -22,7 +22,7 @@ public class HistoryFileManager {
 
     String input;
     String history1="", history2="", history3="", history4="", history5="";
-    File file = new File("call.txt");
+    File file = new File("calculatorHistoryFile.txt");
     String[] lines;
 
     public HistoryFileManager(String input) {

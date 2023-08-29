@@ -9,12 +9,10 @@ package CalculatorPCK;
  * @author User
  */
 public class calJFrameMain extends javax.swing.JFrame {
-    String input = "",his;
+    String input = "";
     int no1, no2,no3, no4,no5, no6,no7, no8,no9, no0,count = 0;
     char sPlus, sMinus, sMulti, sDevide, dot, symbol;
     double num1, num2, ans;
-    String[] history;
-    
 
     /**
      * Creates new form calJFrameMain
